@@ -1,0 +1,15 @@
+@import '../index.css';
+
+.anix-slide-in-up {
+    animation: slideInUp 1s var(--animation-timing-function) forwards;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}

@@ -1,0 +1,15 @@
+@import '../index.css';
+
+.anix-slide-in-left {
+    animation: slideInLeft 1s var(--animation-timing-function) forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50px);
+    }
+}

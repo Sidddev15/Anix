@@ -1,0 +1,15 @@
+@import '../index.css';
+
+.anix-slide-in-down {
+    animation: slideInDown 1s var(--animation-timing-function) forwards;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100px);
+    }
+}

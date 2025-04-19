@@ -1,0 +1,19 @@
+@import '../index.css';
+
+.anix-slide-in-blur {
+    animation: slideInBlur 1.5s var(--animation-timing-function) forwards;
+}
+
+@keyframes slideInBlur {
+    from {
+        transform: translateY(500px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
