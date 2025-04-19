@@ -1,0 +1,12 @@
+.anix-fade-in {
+    animation: anixFadeIn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes anixFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,6 @@
+/*!
+ * AniX Animation Library v1.0.0
+ * A fast, open animation library built for developers.
+ * Author: Siddharth
+ * License: MIT
+ */.anix-fade-in{animation:anixFadeIn 1s cubic-bezier(.25,.1,.25,1) forwards}@keyframes anixFadeIn{from{opacity:0}to{opacity:1}}

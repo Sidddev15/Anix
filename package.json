@@ -1,0 +1,27 @@
+{
+  "name": "anix",
+  "version": "1.0.0",
+  "description": "A fast, open animation library built for developers. Add your own animations in `custom/`.",
+  "main": "anix.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build/build.js"
+  },
+  "keywords": [
+    "animation",
+    "css",
+    "fade",
+    "library",
+    "frontend",
+    "ui"
+  ],
+  "author": "Siddharth Singh",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "clean-css": "^5.3.3"
+  }
+}
