@@ -1,0 +1,25 @@
+@import '../index.css';
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.98);
+  }
+  85% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.anix-bounce-in {
+  animation: bounceIn 0.9s var(--animation-timing-function-bounce) forwards;
+}

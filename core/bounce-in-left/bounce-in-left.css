@@ -1,0 +1,19 @@
+@import '../index.css';
+
+.anix-bounce-in-left {
+    animation: bounceInLeft 0.9s ease-in both;
+}
+
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    60% {
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
