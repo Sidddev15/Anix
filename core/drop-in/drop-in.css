@@ -1,0 +1,15 @@
+@keyframes dropIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-150px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .anix-drop-in {
+    animation: dropIn 0.6s cubic-bezier(0.25, 1, 0.5, 1) both;
+  }
+  

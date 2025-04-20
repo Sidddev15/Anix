@@ -1,0 +1,15 @@
+.anix-roll-in {
+    animation: rollIn 0.8s ease-out both;
+}
+
+@keyframes rollIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(-120deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+}
