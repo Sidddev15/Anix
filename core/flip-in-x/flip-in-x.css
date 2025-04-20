@@ -1,0 +1,17 @@
+@import '../index.css';
+
+.anix-flip-x {
+    animation: flipX 1s var(--animation-timing-function-rot-flp) both;
+    backface-visibility: hidden;
+}
+
+@keyframes flipX {
+    from {
+        opacity: 0;
+        transform: perspective(600px) rotate(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(600px) rotate(0deg);
+    }
+}

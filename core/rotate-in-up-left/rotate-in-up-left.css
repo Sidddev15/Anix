@@ -1,0 +1,19 @@
+@import '../index.css';
+
+.anix-rotate-up-left {
+    animation: rotateUpLeft 1s var(--animation-timing-function-rot-flp) forwards;
+    transform-origin: top left;
+}
+
+@keyframes rotateUpLeft {
+    from {
+        opacity: 0;
+        transform: rotate(-90deg) translateY(-50px);
+        transform-origin: top left;
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0) translateY(0);
+    }
+}

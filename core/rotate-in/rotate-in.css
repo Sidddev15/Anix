@@ -1,0 +1,18 @@
+@import '../index.css';
+
+.anix-rotate-in {
+    animation: rotateIn 1s var(--animation-timing-function-rot-flp) forwards;
+    transform-origin: center;
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
