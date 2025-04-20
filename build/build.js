@@ -1,8 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+const CleanCSS = require("clean-css");
 
 const coreDir = path.join(__dirname, "../core");
-const distFile = path.join(__dirname, "../dist/anix.css");
+const distDir = path.join(__dirname, "../dist");
+const distFile = path.join(distDir, "anix.css");
+const distMinFile = path.join(distDir, "anix.min.css");
 
 // Utility: Recursively read all CSS files inside core/
 function getAllCssFiles(dir) {
@@ -25,8 +28,16 @@ function getAllCssFiles(dir) {
 const cssFiles = getAllCssFiles(coreDir);
 const combinedCoreCSS = cssFiles.map(file => fs.readFileSync(file, "utf8")).join("\n\n");
 
-// Final output string
-const output = `${combinedCoreCSS}`;
-fs.writeFileSync(distFile, output);
+// Ensure dist folder exists
+if (!fs.existsSync(distDir)) {
+  fs.mkdirSync(distDir);
+}
 
-console.log(`✅ Built anix.css successfully with ${cssFiles.length} files from core/`);
+// Write anix.css (unminified)
+fs.writeFileSync(distFile, combinedCoreCSS, "utf8");
+
+// Minify and write anix.min.css
+const minified = new CleanCSS().minify(combinedCoreCSS);
+fs.writeFileSync(distMinFile, minified.styles, "utf8");
+
+console.log(`✅ Built anix.css and anix.min.css successfully with ${cssFiles.length} files from core/`);
