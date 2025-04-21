@@ -17,7 +17,7 @@ AniX is a modern, lightweight animation library built for developers working wit
 ---
 
 ## 📦 Installation
-`<link rel="stylesheet" href="https://cdn.anix.dev/anix.min.css">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@siddsr/anix@latest/dist/anix.min.css">`
 ### 📁 HTML / Vanilla JS
 <!-- CDN (coming soon) -->
 `<script src="https://cdn.anix.dev/anix.min.js"></script>`
