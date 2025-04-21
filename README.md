@@ -37,11 +37,11 @@ You can also trigger animations via JavaScript:
 ## ⚛️ In React (AniX-React)
 `npm install anix-react`
 
-```import { AniXFade } from 'anix-react';
+`import { AniXFade } from 'anix-react';`
 
 <AniXFade direction="up" delay={200}>
   <h1>Hello from React</h1>
-</AniXFade>```
+</AniXFade>
 
 Also available:
 
