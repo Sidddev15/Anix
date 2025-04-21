@@ -1,6 +1,6 @@
 {
   "name": "@siddsr/anix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fast, open animation library built for developers. Add your own animations in `custom/`.",
   "main": "dist/anix.css",
   "files": [ "dist" ],
