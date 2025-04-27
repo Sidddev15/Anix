@@ -1,0 +1,14 @@
+@import '../index.css';
+
+.anix-fade-out {
+    animation: fadeOut 1s var(--animation-timing-function) backwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
