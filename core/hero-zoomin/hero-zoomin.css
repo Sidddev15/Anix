@@ -1,0 +1,16 @@
+@import '../index.css';
+
+.anix-hero-zoom-in {
+  animation: heroZoomIn 1s var(--animation-timing-function-scale) forwards;
+}
+
+@keyframes heroZoomIn {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

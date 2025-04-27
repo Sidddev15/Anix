@@ -1,8 +1,9 @@
 {
   "name": "@siddsr/anix",
-  "version": "1.0.1",
-  "description": "A fast, open animation library built for developers. Add your own animations in `custom/`.",
+  "version": "1.0.2",
+  "description": "Anix is a lightweight, fast, and developer-friendly open-source animation library packed with beautiful, production-ready CSS animations.",
   "main": "dist/anix.css",
+  "style": "dist/anix.css",
   "files": [ "dist" ],
   "directories": {
     "doc": "docs"
@@ -17,12 +18,26 @@
     "fade",
     "library",
     "frontend",
-    "ui"
+    "ui",
+    "css-animations",
+    "open-source",
+    "animation-library",
+    "lightweight",
+    "anix",
+    "developer-tools"
   ],
   "author": "Siddharth Singh",
   "license": "MIT",
   "dependencies": {
     "chokidar": "^4.0.3",
     "clean-css": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sidddev15/Anix.git"
+  },
+  "homepage": "https://github.com/Sidddev15/Anix#readme",
+  "bugs": {
+    "url": "https://github.com/Sidddev15/Anix/issues"
   }
 }

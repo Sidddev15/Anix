@@ -1,0 +1,17 @@
+@import '../index.css';
+
+.anix-wiggle {
+  animation: anixWiggle 1s ease-in-out both;
+}
+
+@keyframes anixWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}

@@ -1,0 +1,17 @@
+@import '../index.css';
+
+.anix-contract-out {
+    animation: contractOut 0.7s var(--animation-timing-function-scale) backwards;
+}
+
+@keyframes contractOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+}

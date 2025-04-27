@@ -1,0 +1,17 @@
+@import '../index.css';
+
+.anix-shake-x {
+  animation: anixShakeX 0.8s ease-in-out both;
+}
+
+@keyframes anixShakeX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
