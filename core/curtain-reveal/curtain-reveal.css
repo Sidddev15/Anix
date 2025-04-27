@@ -1,0 +1,18 @@
+@import '../index.css';
+
+.anix-curtain-reveal {
+    animation: curtainReveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    transform-origin: top center;
+}
+
+@keyframes curtainReveal {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
