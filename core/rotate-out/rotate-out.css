@@ -1,0 +1,18 @@
+@import '../index.css';
+
+.anix-rotate-out {
+    animation: rotateOut 1s var(--animation-timing-function-rot-flp) backwards;
+    transform-origin: center;
+}
+
+@keyframes rotateOut {
+    from {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate(200deg) scale(0.7);
+    }
+}

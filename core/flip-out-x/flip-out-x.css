@@ -1,0 +1,18 @@
+@import '../index.css';
+
+.anix-flip-out-x {
+    animation: flipOutX 1s var(--animation-timing-function-rot-flp) backwards;
+    backface-visibility: hidden;
+}
+
+@keyframes flipOutX {
+    from {
+        opacity: 1;
+        transform: perspective(600px) rotateX(0deg);
+    }
+
+    to {
+        opacity: 0;
+        transform: perspective(600px) rotateX(90deg);
+    }
+}

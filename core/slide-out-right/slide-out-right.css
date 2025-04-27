@@ -1,0 +1,16 @@
+@import '../index.css';
+
+.anix-slide-out-right {
+    animation: slideOutRight 1s var(--animation-timing-function) backwards;
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}

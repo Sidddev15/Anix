@@ -1,0 +1,26 @@
+@import '../index.css';
+
+.anix-bounce-out {
+    animation: bounceOut 0.9s var(--animation-timing-function-bounce) forwards;
+}
+
+@keyframes bounceOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+}
