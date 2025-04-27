@@ -1,0 +1,17 @@
+@import '../index.css';
+
+.anix-zoom-out-down {
+    animation: zoomOutDown 1s var(--animation-timing-function-scale) backwards;
+}
+
+@keyframes zoomOutDown {
+    from {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.5) translateY(100px);
+    }
+}
