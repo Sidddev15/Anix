@@ -1,0 +1,16 @@
+@import '../index.css';
+
+.anix-slide-out-down {
+    animation: slideOutDown 1s var(--animation-timing-function) backwards;
+}
+
+@keyframes slideOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
