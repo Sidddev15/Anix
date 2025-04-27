@@ -1,0 +1,17 @@
+@import '../index.css';
+
+.anix-drop-out {
+    animation: dropOut 1s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+@keyframes dropOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+}
