@@ -1,0 +1,18 @@
+@import '../index.css';
+
+.anix-rotate-out-up-right {
+    animation: rotateOutUpRight 1s var(--animation-timing-function-rot-flp) backwards;
+    transform-origin: top right;
+}
+
+@keyframes rotateOutUpRight {
+    from {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate(90deg) translateY(-100px);
+    }
+}
