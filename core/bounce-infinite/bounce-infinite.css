@@ -1,0 +1,17 @@
+@import '../index.css';
+
+.anix-bounce-infinite {
+  animation: anixBounceInfinite 2s var(--animation-timing-function-bounce) infinite;
+}
+
+@keyframes anixBounceInfinite {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
