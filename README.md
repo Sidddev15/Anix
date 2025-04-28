@@ -24,6 +24,8 @@ AniX is a modern, lightweight animation library built for developers working wit
 
 Or download locally:
 `npm i @siddsr/anix`
+After installing, import the CSS file into your project:
+`import '@siddsr/anix/dist/anix.min.css';`
 
 ## 🛠️ Usage
 ### 🚀 In HTML
