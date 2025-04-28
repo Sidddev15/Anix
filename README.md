@@ -163,6 +163,6 @@ Want to collaborate, sponsor, or contribute to AniX Pro? Let’s talk: siddharth
 - 🌐 Docs: anix.dev (coming soon)
 - 📦 NPM: [npmjs.com/package/anix-core](https://www.npmjs.com/package/@siddsr/anix)
 - 🧪 Playground: play.anix.dev (coming soon)
-- 🐙 GitHub: [github.com/your-username/anix](https://github.com/Sidddev15/Anix)
+- 🐙 GitHub: [github.com/sidddev15/anix](https://github.com/Sidddev15/Anix)
 
 Made with ❤️ by [Siddharth Singh Rathore]
