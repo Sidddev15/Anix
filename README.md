@@ -1,8 +1,13 @@
 # 🎉 AniX – Animation + UX Library
 
-AniX is a modern, lightweight animation library built for developers working with **HTML/CSS/JS**, **React**, and **Angular**. It provides **production-ready UI animations** – from button hover effects to full-page transitions – all in a clean, dev-friendly format.
+AniX is a modern, lightweight animation library built for developers working with HTML, CSS, JavaScript, React, Angular, and Vue.  
+It provides production-ready UI animations — from button hover effects to full-page transitions — all in a clean, dev-friendly format.
 
-> 🎯 Goal: To become the go-to animation library for developers who want **polished UI** without bloated dependencies.
+---
+
+## 🎯 Goal
+
+Become the go-to animation library for developers who want polished UI without bloated dependencies.
 
 ---
 
@@ -10,105 +15,130 @@ AniX is a modern, lightweight animation library built for developers working wit
 
 - 🔥 100+ production-ready animations (entry, exit, loaders, buttons & more)
 - ⚡ Lightweight and fast (no runtime bloat)
-- 🌐 Use with **HTML**, or integrate with **React** & **Angular**
+- 🌐 Works with HTML, React, Angular, and Vue
 - 🎛️ Customizable: duration, delay, color, easing, size
 - 🧩 Modular: Use only what you need
+- 🚀 Simple, class-based usage (no JavaScript required)
 
 ---
 
 ## 📦 Installation
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@siddsr/anix@latest/dist/anix.min.css">`
-### 📁 HTML / Vanilla JS
-<!-- CDN (coming soon) -->
-`<script src="https://cdn.anix.dev/anix.min.js"></script>`
 
-Or download locally:
-`npm i @siddsr/anix`
-After installing, import the CSS file into your project:
+### Option 1: CDN (Recommended for Quick Use)
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@siddsr/anix@latest/dist/anix.min.css">`
+
+### Option 2: NPM Install
+
+`npm install @siddsr/anix`
+After installing, import the CSS in your project:
 `import '@siddsr/anix/dist/anix.min.css';`
 
 ## 🛠️ Usage
 ### 🚀 In HTML
-
 `<div class="ani-fade-in-up">Hello AniX</div>`
 
-You can also trigger animations via JavaScript:
+## ⚛️ In React
 
-`AniX.animate(document.querySelector('.my-box'), 'fade-in-left');`
+```` ```jsx ````
+npm install anix-react
 
-## ⚛️ In React (AniX-React)
-`npm install anix-react`
+import '@siddsr/anix/dist/anix.min.css';
 
-`import { AniXFade } from 'anix-react';`
+function App() {
+  return <div className="anix-fade-in-left">Welcome to AniX!</div>;
+}
+```` ``` ````
 
-<AniXFade direction="up" delay={200}>
-  <h1>Hello from React</h1>
-</AniXFade>
+## 🅰️ In Angular
 
-Also available:
+// In your component template
+`<div class="anix-zoom-in">Angular + AniX!</div>`
 
-`useAniX()` hook for manual control
+// Import the CSS in your global styles
+`@import "~@siddsr/anix/dist/anix.min.css";`
 
-`<AniXBounce>, <AniXZoom>, etc.`
+## 🌱 In Vue
+```` ```jsx ````
+<template>
+  <div class="anix-slide-in-right">Vue.js with AniX</div>
+</template>
 
-## 🅰️ In Angular (AniX-Angular)
+<script>
+import '@siddsr/anix/dist/anix.min.css';
+export default { };
+</script>
+```` ``` ````
 
-`npm install anix-angular`
-
-`<div aniXFade [aniXDelay]="300">Fade in Angular</div>`
-
-### Use directives like:
-- aniXSlide
-- aniXBounce
-- aniXOnScroll
-
-## 🎁 Animation Categories
+## 🎬 Animation Categories
 
 ### 🎬 Entry Animations
-- fade-in, slide-in-up, zoom-in, rotate-in, bounce-in, pop-in, stretch-in, drop-in, flip-in-x
+
+- anix-fade-in
+
+- anix-slide-in-up, anix-slide-in-down, anix-slide-in-left, anix-slide-in-right
+
+- anix-zoom-in, anix-zoom-in-up, anix-zoom-in-down
+
+- anix-rotate-in
+
+- anix-bounce-in, anix-drop-in
+
+- anix-pop-in, anix-grow-in, anix-stretch-y
 
 ### 🚪 Exit Animations
-- fade-out, slide-out-left, zoom-out, flip-out-y, shrink-out, contract-out, drop-out
+
+- anix-fade-out
+
+- anix-slide-out-up, anix-slide-out-down, anix-slide-out-left, anix-slide-out-right
+
+- anix-zoom-out
+
+- anix-rotate-out
+
+- anix-flip-out-x, anix-flip-out-y
+
+- anix-bounce-out, anix-drop-out
+
+- anix-shrink-out, anix-contract-out
 
 ### 🎨 Button Effects
 
-- Slide reveal (slide-bg-left, slide-text-up)
-- Glow & fills (fill-color-left, fill-glow)
-- Morph & 3D (morph-pill, 3d-tilt, wobble)
-- Icon interactions (icon-bounce, icon-rotate, icon-grow)
+- slide-bg-left, slide-text-up
+
+- fill-color-left, fill-glow
+
+- morph-pill, 3d-tilt, wobble
+
+- icon-bounce, icon-rotate, icon-grow
 
 ### ⚙️ Loader & Spinner Animations
 
-- Dot loaders (bounce-dots, typing-dots, wave-dots)
-- Circular spinners (spinner-ring, orbit-loader)
-- Bar loaders (progress-bar-slide, pulse-progress)
-- Text effects (typewriter-loader, scrambled-text)
-- Fancy (gooey-balls, heartbeat-loader, firefly-loader)
+- bounce-dots, typing-dots, wave-dots
+
+- spinner-ring, orbit-loader
+
+- progress-bar-slide, pulse-progress
+
+- typewriter-loader, scrambled-text
+
+- gooey-balls, heartbeat-loader, firefly-loader
 
 ### 🧲 Scroll-Based Effects
 
-- On scroll: fade-in-on-scroll, zoom-in-on-scroll
-- Scroll motion: scroll-float-up, scroll-blur-in, scroll-tilt
-- Text scroll: text-reveal-mask, text-split-word
+- fade-in-on-scroll
 
-## 🛒 AniX Product Roadmap
+- zoom-in-on-scroll
 
-- ✅ AniX Core – HTML/CSS/JS utility classes
-- ⚛️ AniX-React – React components & hooks
-- 🅰️ AniX-Angular – Angular directives
-- 💎 AniX Pro (coming soon) – Premium templates, dashboards, loaders
-- 🌐 AniX CDN – Free hosted version (for quick testing)
-- 🧪 AniX Playground – Live animation customizer
+- scroll-float-up
 
-## 🛠 Contribution Guide
+- scroll-blur-in
 
-- Want to contribute? Open to PRs for new animations, fixes, and integrations.
-- Fork the repo
-- Create a new branch: git checkout -b feature-name
-- Add your changes with comments
-- Submit a PR and let's collaborate 🚀
+- scroll-tilt
 
-Contribution guidelines and testing instructions coming soon.
+- text-reveal-mask
+
+- text-split-word
 
 ## 📜 License
 
@@ -117,9 +147,16 @@ MIT License. Free to use in personal and commercial projects.
 ## 💼 Business Philosophy
 
 AniX = Animation + UX.
-We aim to simplify animations for frontend devs while keeping things modern, modular, and blazing fast. Whether you're building a landing page, dashboard, or app UI, AniX helps you stand out with style.
+We aim to simplify animations for frontend devs while keeping things lightweight, modern, modular, and blazing fast.
+
+Whether you're building a landing page, dashboard, portfolio, SaaS app, or an e-commerce site, AniX will help your UI stand out — with style.
 
 Want to collaborate, sponsor, or contribute to AniX Pro? Let’s talk: siddharth.sr.dev@gmail.com
+
+## 📢 Important Note
+
+- 📄 Official Documentation is coming soon!
+- 📖 For now, consider this README as your rough guide to use AniX easily.
 
 ## 🚀 Quick Links
 
